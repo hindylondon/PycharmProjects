@@ -1,0 +1,67 @@
+/* Body Styling */
+
+body {
+  background-image: url("../images/background.png");
+  border: white;
+}
+
+/* Girls Table Styles */
+table.girls_info, table.boys_info {
+  background: white;
+  border: 10px outset pink;
+  border-collapse: collapse;
+  font-size: 1.5em;
+}
+
+
+/* Table Cell Styles */
+table.girls_info th, table.girls_info td, table.boys_info th, table.boys_info td {
+  border: 2px solid gray;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/* Row Group Styles */
+table.girls_info thead, table.boys_info thead {
+  background: pink;
+  color: white;
+}
+
+table.girls_info tfoot, table.boys_info tfoot {
+  background-image: url(../images/background.png);
+  color: white;
+}
+
+table.girls_info thead tr, table.boys_info thead tr {
+  height: 30px;
+}
+
+table.girls_info tbody tr, table.boys_info tbody tr {
+  height: 40px;
+}
+
+body a {
+  color: #2D2D2D;
+}
+
+table.girls_info {
+  display: inline-block;
+}
+
+table.boys_info {
+  display: inline-block;
+}
+
+div.girls_pic {
+  display: inline-block;
+}
+
+div.boys_pic {
+  display: inline-block;
+}
+
+body img {
+  display: inline-block;
+}

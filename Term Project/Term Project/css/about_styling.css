@@ -1,0 +1,53 @@
+
+/* About Page */
+
+body {
+  background-image: url("../images/shadchan_website_logo.png");
+}
+
+
+body h1,h2 {
+    display: flex;
+  flex-flow: row wrap;
+}
+
+
+body h1 {
+    background-color: white;
+    color: darkgray;
+    padding: 5px;
+  border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 2em;
+    margin: 10px;
+  overflow: hidden;
+  display: inline-block;
+  float: top;
+}
+
+body h2  {
+    background-image: url("../images/background.png");
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+  color: white;
+  text-align: left;
+  overflow: hidden;
+}
+
+body h3  {
+    background-image: url("../images/background.png");
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+  color: white;
+  text-align: left;
+  overflow: hidden;
+}
+
+
+

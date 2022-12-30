@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadchan Inc.</title>
+  <link href="../css/home_styling.css" rel="stylesheet"/>
+  <link href="../css/main_styling.css" rel="stylesheet"/>
+  <script src="../js/javascript.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Shadchan Inc!</h1>
+  <h2>Please fill out this form to be properly directed to your appropriate match.</h2>
+  <h3>This form will be forwarded to esteemed Shadchanim with your best interests in mind!</h3>
+  <nav>
+    <ul>
+      <li><a href="shadchan_home.html">Home</a></li>
+      <li><a href="shadchan_info.html">Helpful Tips</a></li>
+      <li><a href="shadchan_about.html">About</a></li>
+      <li id="dateNow">Date</li>
+      <li id="days">Days</li>
+      <li id="hrs">Hours</li>
+      <li id="mins">Minutes</li>
+      <li id="secs">Seconds</li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <form id="survey" action="http://www.shainc18.com" method="post">
+
+    <fieldset id="clientInfo">
+      <legend>Client Information</legend>
+      <div class="formRow">
+        <label for="name">Name*</label>
+        <input name="clientName" id="name" type="text" placeholder="first and last name" required/>
+      </div>
+
+      <div class="formRow">
+        <label for="street">Street Address</label>
+        <input name="clientStreet" id="street" type="text"/>
+      </div>
+
+      <div class="formRow">
+        <label for="city">City</label>
+        <input name="clientCity" id="city" type="text"/>
+      </div>
+
+      <div class="formRow">
+        <label for="state">State</label>
+        <input name="clientState" id="state" type="text"/>
+      </div>
+
+      <div class="formRow">
+        <label for="zip">Postal Code</label>
+        <input name="clientZip" id="zip" type="text" placeholder="nnnnn (-nnnn) " pattern="^\d{5}(-\d{4})?$"/>
+      </div>
+
+      <div class="formRow">
+        <label for="phone">Phone Number</label>
+        <input name="clientPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+               pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+      </div>
+
+      <div class="formRow">
+        <label for="mail">Email*</label>
+        <input name="clientEmail" id="mail" type="email" required/>
+      </div>
+
+    </fieldset>
+    <fieldset id="clientSpecs">
+      <legend>What are you looking for?</legend>
+
+      <div class="formRow">
+        <label for="dob">Date of Birth</label>
+        <input name="dob" id="dob" type="date"/>
+      </div>
+
+      <div class="formRow">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="gen1">Male</option>
+          <option value="gen2">Female</option>
+          <option value="gen3" selected>Select</option>
+        </select>
+      </div>
+
+      <div class="formRow">
+        <label for="info">Choose your priorties
+          <br/> (select all that apply)
+        </label>
+        <select name="infoSrc" id="info" size="9" multiple>
+          <option value="middos">Middos</option>
+          <option value="rav">Having a Rav</option>
+          <option value="sem">Seminary in Eretz Yisroel</option>
+          <option value="lt">Long-Term Learning</option>
+          <option value="work">Working</option>
+          <option value="st">Short-Term Learning</option>
+          <option value="job">Good Job</option>
+          <option value="dgr">Degree</option>
+          <option value="tznius">Tznius</option>
+
+
+        </select>
+      </div>
+
+      <div class="formRow">
+        <label for="rangeBox">Rate how frum you are<br/> (0=Not Frum; 10=Greasy)</label>
+        0
+        <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10"/>
+        10
+      </div>
+
+      <div class="formRow">
+        <label>Do you have a smartphone?</label>
+        <fieldset class="optGroup">
+          <label for="fYes">Yes</label>
+          <input name="sPhone" id="fYes" value="yes" type="radio"/>
+          <label for="fNo">No</label>
+          <input name="sPhone" id="fNo" value="no" type="radio"/>
+        </fieldset>
+      </div>
+
+      <div class="formRow">
+        <label>Would you live in Eretz Yisroel?</label>
+        <fieldset class="optGroup">
+          <label for="cYes">Yes</label>
+          <input name="ey" id="cYes" value="yes" type="radio"/>
+          <label for="cNo">No</label>
+          <input name="ey" id="cNo" value="no" type="radio"/>
+        </fieldset>
+      </div>
+
+      <div class="formRow">
+        <label>Do you have a degree?</label>
+        <fieldset class="optGroup">
+          <label for="hYes">Yes</label>
+          <input name="degree" id="hYes" value="yes" type="radio"/>
+          <label for="hNo">No</label>
+          <input name="degree" id="hNo" value="no" type="radio"/>
+        </fieldset>
+      </div>
+
+      <div class="formRow">
+        <label for="occType">What is your current occupation?</label>
+        <select name="occupation" id="occType">
+          <option value="occ1">Special Ed</option>
+          <option value="occ2">Learning</option>
+          <option value="occ3">Computers</option>
+          <option value="occ4">Teaching</option>
+          <option value="occ5">Nursing Homes</option>
+          <option value="occ6">Business</option>
+          <option value="occ7">Accountant</option>
+          <option value="occ8">Social Worker</option>
+          <option value="occ9">ABA/BCBA</option>
+          <option value="occ10">Speech Therapist</option>
+          <option value="occ11">Nurse/PA/Doctor</option>
+          <option value="occ12">Other-!RED FLAG!</option>
+          <option value="occ13">Don't know yet</option>
+          <option value="occ14" selected>Select</option>
+        </select>
+      </div>
+
+      <div class="formRow">
+        <label for="suppYrs">Home many years of support are you offering?</label>
+        <input name="supportYears" id="suppYrs" type="number" value="1" step="1" min="0" max="20+"/>
+      </div>
+
+      <input name="mailMe" id="mailCB" value="yes" type="checkbox"/>
+      <label for="mailCB">Add me to your mailing list for chizuk and inspiration!</label>
+
+
+      <label for="commBox"><br/><br/>Tell us more about you! Please enter any other specifications you may have.</label>
+      <textarea name="addInfo" id="commBox"></textarea>
+
+    </fieldset>
+    <div id="buttons">
+      <input type="submit" value="Submit My Hishtadlus"/>
+      <input type="reset" value="Cancel"/>
+    </div>
+  </form>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</section>
+
+<footer>
+  <img src="../images/shadchan_website_logo.png" alt="Shadchan Logo" width="50" height="50">
+  Shadchan Inc &#8226; shainc18@gmail.com &#8226; (123) 456-7890
+  <img src="../images/shadchan_website_logo.png" alt="Shadchan Logo" width="50" height="50">
+</footer>
+
+</html>
